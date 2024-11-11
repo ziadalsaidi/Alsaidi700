@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض الصعيدي الأصلي</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .info {
+            color: orange;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-size: 16px;
+            text-align: right;
+        }
+        input[type="text"],
+        input[type="file"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: right;
+        }
+        button {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .note {
+            background-color: #fff9c4;
+            padding: 10px;
+            border-radius: 5px;
+            color: #333;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>دفع عربون معرض الصعيدي</h1>
+        <p>لإتمام عملية الدفع، يرجى تحويل المبلغ عبر فودافون كاش إلى الرقم التالي:</p>
+        <p class="info">رقم محفظة فودافون كاش: 01032092547</p>
+        
+        <!-- نموذج الدفع -->
+        <form>
+            <label for="fullName">الاسم بالكامل:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="phoneNumber">الرقم الذي تم منه التحويل:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" required>
+
+            <label for="amount">المبلغ (بالجنيه المصري):</label>
+            <input type="text" id="amount" name="amount" required>
+
+            <label for="carType">نوع السيارة:</label>
+            <select id="carType" name="carType" required>
+                <option value="ركوب">سيارة ركوب</option>
+                <option value="نقل">سيارة نقل</option>
+                <option value="أجرة">سيارة أجرة</option>
+            </select>
+
+            <label for="screenshot">إرفاق صورة التحويل:</label>
+            <input type="file" id="screenshot" name="screenshot" accept="image/*" required>
+
+            <button type="submit">إرسال البيانات</button>
+        </form>
+
+        <div class="note">
+            يرجى تصوير الوصل لضمان حقك في حال حدوث أي مشاكل في الدفع.
+        </div>
+    </div>
+</body>
+</html>
